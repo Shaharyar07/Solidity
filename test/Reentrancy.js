@@ -66,6 +66,7 @@ describe("Reentrancy", () => {
           await ethers.provider.getBalance(attacker.address)
         )
       );
+      
 
       //Check the balance has been drained
       expect(await ethers.provider.getBalance(bank.address)).to.equal(0);
